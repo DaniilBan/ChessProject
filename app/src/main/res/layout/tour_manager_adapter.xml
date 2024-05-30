@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/button_for_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="5"
+        android:text="ПРИМЕНИТЬ"
+        android:textSize="20dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        app:layout_constraintTop_toTopOf="parent">
+    </Button>
+
+    <TextView
+        android:id="@+id/text_name_for_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="qwerty"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:maxLines="5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_for_adapter">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_surname_for_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="qwerty"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:maxLines="5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_name_for_adapter">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_rating_for_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="asdk"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:maxLines="5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_surname_for_adapter">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_points_for_adapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="qwerty"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="5"
+        app:layout_constraintLeft_toRightOf="@id/text_rating_for_adapter"
+        app:layout_constraintTop_toBottomOf="@id/text_surname_for_adapter">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_name_for_adapter_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="qwerty"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:maxLines="5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_for_adapter">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_surname_for_adapter_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="qwerty"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:maxLines="5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_name_for_adapter_second">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_rating_for_adapter_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="asdk"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:maxLines="5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_surname_for_adapter_second">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_points_for_adapter_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="qwerty"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="5"
+        app:layout_constraintRight_toLeftOf="@id/text_rating_for_adapter_second"
+        app:layout_constraintTop_toBottomOf="@id/text_surname_for_adapter_second">
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_surname_for_adapter_second"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radiobutton_for_adapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintLeft_toRightOf="@id/text_points_for_adapter"
+            app:layout_constraintTop_toBottomOf="@id/text_surname_for_adapter">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiobutton_for_adapter_draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_surname_for_adapter_second">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiobutton_for_adapter_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@+id/text_points_for_adapter_second"
+            app:layout_constraintTop_toBottomOf="@id/text_surname_for_adapter_second">
+        </RadioButton>
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
